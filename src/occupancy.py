@@ -21,7 +21,7 @@ def get_occupancy():
 
     perc_index = occup_tag.index("%")
     occupancy = occup_tag[perc_index - 2: perc_index]
-    return occupancy
+    return int(occupancy)
 
 def write_log(occupancy, filename):
     now = _datetime.now()
